@@ -1,0 +1,86 @@
+.gallery
+	position: relative
+	&__block
+		position: relative
+	.nav-tabs
+		border: none
+		gap: 1rem
+		.nav-link
+			background-color: #fff
+			border: .0625rem solid var(--gray)
+			box-shadow: 0px 0px .8125rem 0px rgba(30, 93, 86, 0.04)
+			border-radius: 2rem
+			padding: 0 2rem
+			height: 3.25rem
+			color: var(--text-70)
+			letter-spacing: 0.03em
+			text-transform: uppercase
+			margin: 0
+			+reg
+			&.active
+				background-color: var(--accent-3)
+				color: #fff
+			&:hover
+				background-color: var(--accent)
+				border-color: var(--accent)
+				color: #fff
+			&:active, &:focus
+				background-color: var(--text)
+				border-color: var(--text)
+				color: #fff
+	&__slider, &__slider-two
+		.slick-slide
+			margin: 0 .75rem
+			width: 12.5rem
+		.slick-list
+			width: 110.5rem
+	&__image
+		display: block
+		position: relative
+		.box
+			width: 100%
+			height: 22.25rem
+			border-radius: 1rem
+	.tab-content
+		margin-top: 2rem
+	&__arrows
+		position: absolute
+		top: 0
+		right: 0
+
+@media screen and ( max-width: 991.98px )
+	.gallery
+		&__left
+			gap: 1.125rem
+			nav
+				width: 100%
+		.nav-tabs
+			gap: 1.25rem
+			+col-two
+		&__arrows
+			position: initial
+			justify-content: flex-end
+		&__slider, &__slider-two
+			&-wrapper
+				display: flex
+				flex-direction: column-reverse
+				gap: 1.375rem
+			.slick-list
+				width: 54.5rem
+
+@media screen and ( max-width: 575.98px )
+	.gallery
+		&__slider, &__slider-two
+			.slick-slide
+				margin: 0 .625rem
+				width: 10.5rem
+			.slick-list
+				width: 34rem
+		&__image
+			.box
+				height: 18.625rem
+		.tab-content
+			margin-top: 1.375rem
+		.nav-tabs
+			.nav-link
+				font-size: 1.125rem

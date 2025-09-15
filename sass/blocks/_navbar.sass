@@ -1,0 +1,119 @@
+.navbar
+	padding: .75rem 0
+	position: fixed
+	width: 100%
+	margin: auto
+	background-color: var(--light-gray)
+	z-index: 100
+	&-brand
+		max-width: 12.1875rem
+		min-width: 12.1875rem
+		width: 100%
+		padding: 0
+		display: flex
+		&__img
+			width: 100%
+	&-menu
+		.navbar
+			&-nav
+				gap: 2rem
+				.nav
+					&-link
+						color: var(--text-40)
+						padding: 0 !important
+						border-bottom: .0625rem solid transparent
+						&:hover
+							color: var(--accent)
+							border-color: var(--accent)
+						&:focus, &:active
+							color: var(--text)
+							border-color: var(--text)
+	&__phone
+		color: var(--accent)
+	&__group
+		gap: 1.5rem
+	&__right
+		width: 100%
+	&__socials
+		.socials
+			&__item
+				border: .0625rem solid var(--text)
+				&:hover
+					background-color: var(--text)
+					svg
+						path
+							fill: #fff
+				&:active, &:focus
+					background-color: var(--accent-3)
+					border-color: var(--accent-3)
+					svg
+						path
+							fill: #fff
+
+@media screen and ( max-width: 991.98px )
+	.navbar
+		&-brand
+			z-index: 9999
+			position: relative
+		&-toggler
+			width: 3.25rem
+			height: 3.25rem
+			border: .0625rem solid var(--text)
+			border-radius: 50%
+			padding: 0
+			box-shadow: none !important
+			+center
+			&-icon
+				background: none
+				+center
+				width: 2rem
+				height: 2rem
+				svg
+					width: 100%
+					height: auto
+		&-menu
+			margin-bottom: 1rem
+			.navbar
+				&-nav
+					gap: 1.5rem
+					text-align: right
+		&__group
+			width: 100%
+		&__btn
+			width: 100%
+		.offcanvas
+			width: 100%
+			height: max-content
+			border-radius: 0 0 0 1.125rem
+			&-header
+				padding: 1.75rem 2rem 1rem 2rem
+			&-body
+				padding: 1rem 2rem 2rem
+			.btn-close
+				padding: 0
+				width: 2.125rem
+				height: 2.125rem
+				display: flex
+				background: none
+				opacity: 1
+				svg
+					width: 100%
+		&__right
+			width: auto
+
+@media screen and ( max-width: 575.98px )
+	.navbar
+		padding: 1rem 0
+		&-brand
+			max-width: 9.5625rem
+			min-width: 9.5625rem
+		.offcanvas
+			&-header
+				padding: 2rem 1.5rem .5rem 1.5rem
+			&-body
+				padding: 1rem 1.5rem 1.5rem
+		&-menu
+			.navbar-nav
+				font-size: 1.125rem
+		&__phone
+			font-size: 1.5rem

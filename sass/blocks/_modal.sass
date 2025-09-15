@@ -1,0 +1,46 @@
+.modal
+	&-video
+		.modal
+			&-dialog
+				max-width: 50rem
+			&-content
+				border-radius: 0
+			&-header
+				padding: 0
+			&-body
+				padding: 0
+	&__video
+		width: 100%
+		height: 31.25rem
+		iframe
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.btn-close
+		padding: 0
+		width: 2.125rem
+		height: 2.125rem
+		display: flex
+		background: none
+		opacity: 1
+		position: absolute
+		top: -2rem
+		right: -2rem
+		svg
+			width: 100%
+
+@media screen and ( max-width: 991.98px )
+	.modal
+		&-video
+			.modal
+				&-dialog
+					max-width: 40.625rem
+		&__video
+			height: 25rem
+
+@media screen and ( max-width: 575.98px )
+	.modal
+		&__video
+			height: 18.75rem
+		.btn-close
+			right: 0

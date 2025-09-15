@@ -1,0 +1,119 @@
+.footer
+	padding: 1.5rem 0
+	.container-fluid
+		max-width: 100%
+	&__block
+		background-color: var(--text)
+		border-radius: 1.5rem
+		padding: 5rem 0
+	&__wrapper
+		gap: 6rem
+	&__logo
+		max-width: 11.9375rem
+		width: 100%
+		display: block
+		&-icon
+			width: 100%
+	&-menu
+		.navbar
+			&-nav
+				flex-direction: row
+				gap: 2rem
+				.nav
+					&-link
+						color: #fff
+						padding: 0 !important
+						border-bottom: .0625rem solid transparent
+						&:hover
+							color: var(--accent)
+							border-color: var(--accent)
+						&:active, &:focus
+							color: var(--accent-3)
+							border-color: var(--accent-3)
+	&__info
+		max-width: 28.75rem
+		width: 100%
+	&__links
+		gap: .25rem
+	&__privacy
+		color: rgba(255, 255, 255, 0.5)
+		letter-spacing: 0.03em
+		text-decoration: underline
+	&__copyright
+		color: rgba(255, 255, 255, 0.5)
+		letter-spacing: 0.03em
+	&__contacts
+		&-title
+			color: var(--accent)
+	&__socials
+		.socials
+			&__item
+				background-color: var(--accent)
+				&:hover
+					background-color: var(--accent-3)
+				&:active, &:focus
+					background-color: var(--text)
+	&__developer
+		&-text
+			font-size: .875rem
+			color: var(--light-gray)
+			letter-spacing: 0.03em
+		&-logo
+			width: 7.8125rem
+
+@media screen and ( max-width: 991.98px )
+	.footer
+		&__block
+			padding: 3.125rem 0
+		&__wrapper
+			gap: 3rem
+		&-menu
+			.navbar
+				&-nav
+					gap: 1.5rem 3rem
+					flex-direction: column
+					flex-wrap: wrap
+					height: 7.5rem
+		&__contacts
+			width: 100%
+		&__info
+			width: auto
+		&__group
+			max-width: 30rem
+			width: 100%
+
+@media screen and ( max-width: 575.98px )
+	.footer
+		margin: 0
+		padding: 0
+		&__block
+			padding: 2.5rem 0
+			border-radius: 0
+		.container-fluid
+			padding: 0
+		.row
+			margin-right: 0
+			margin-left: 0
+			& > .col-12
+				padding-left: 0
+				padding-right: 0
+		&__wrapper
+			//justify-content: space-between
+			gap: 1.5rem
+		&__logo
+			max-width: 6.25rem
+		&-menu
+			font-size: 1.125rem
+			.navbar-nav
+				gap: 1rem 3rem
+				height: 6.4375rem
+		&__contacts
+			&-title
+				font-size: 1.375rem
+		&__developer
+			&-text
+				font-size: 1rem
+			&-logo
+				width: 8.5625rem
+		&__group
+			max-width: 16.875rem

@@ -1,0 +1,144 @@
+.about
+	&__images
+		gap: 1.5rem
+		position: relative
+		&::before
+			content: ''
+			background-image: url(../img/about/decor.svg)
+			background-repeat: no-repeat
+			background-size: 100%
+			width: 21.5625rem
+			height: 17.125rem
+			position: absolute
+			left: -7rem
+			bottom: -1.875rem
+			z-index: 1
+	&__group
+		gap: 1.5rem
+		margin-top: 5rem
+	&__image
+		.box
+			border-radius: 1.5rem
+		&--big
+			.box
+				width: 21.5rem
+				height: 30.125rem
+		&--horizontal
+			.box
+				width: 22rem
+				height: 14.3125rem
+		&--small
+			background-color: var(--accent-2)
+			border-radius: 2rem
+			width: 14.3125rem
+			height: 14.3125rem
+			padding: 1rem
+			+center
+			.box
+				width: 100%
+				height: 100%
+	&__wrapper
+		gap: 2rem
+		max-width: 42rem
+		width: 100%
+	&__desc
+		&-title
+			font-size: 2rem
+			line-height: 1
+			text-transform: uppercase
+			color: #fff
+			background-color: var(--accent-3)
+			border-radius: 1.5rem
+			padding: 0 1.5rem
+			height: 3rem
+			width: max-content
+			transform: rotate(-1deg)
+			+Sreg
+			+center
+		&-list
+			margin-top: 1rem
+			margin-left: 2rem
+			letter-spacing: 0.04em
+			li
+				display: flex
+				align-items: center
+				gap: 1rem
+				margin-bottom: .75rem
+				padding: .25rem 0
+				&:last-child
+					margin: 0
+				&::before
+					content: ''
+					background-image: url(../img/about/item.svg)
+					background-repeat: no-repeat
+					background-size: 100%
+					min-width: 2.25rem
+					height: 1.5rem
+	&__frame
+		background-color: var(--gray)
+		border-radius: 1rem
+		max-width: 35.9375rem
+		width: 100%
+		&-icon
+			min-width: 3.875rem
+		&-text
+			letter-spacing: 0.02em
+
+@media screen and ( max-width: 991.98px )
+	.about
+		&__wrapper
+			max-width: 100%
+		&__image
+			&--horizontal
+				.box
+					width: 21rem
+		&__frame
+			max-width: 100%
+
+@media screen and ( max-width: 575.98px )
+	.about
+		&__wrapper
+			gap: 1.5rem
+		&__desc
+			&-title
+				font-size: 1.125rem
+				height: 2.125rem
+				padding: 0 .9375rem
+				border-radius: 1rem
+			&-list
+				margin-left: 0
+				margin-top: 1.5rem
+		&__frame
+			padding: .75rem 1.25rem
+			&-icon
+				min-width: 2.875rem
+			&-text
+				font-size: 1.125rem
+		&__images
+			margin-top: 3.75rem
+			gap: .75rem
+			&::before
+				width: 10.4375rem
+				height: 8.25rem
+				right: -1.5rem
+				left: auto
+				bottom: 2.25rem
+		&__group
+			margin: 0
+			gap: .75rem
+		&__image
+			.box
+				border-radius: .75rem
+			&--big
+				.box
+					width: 11.125rem
+					height: 100%
+			&--horizontal
+				.box
+					width: 15rem
+					height: 10.4375rem
+			&--small
+				width: 6.875rem
+				height: 6.875rem
+				padding: .5rem
+				border-radius: 1rem
